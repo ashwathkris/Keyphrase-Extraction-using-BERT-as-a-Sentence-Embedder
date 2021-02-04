@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8" />
+
+    <style >
+      body{
+        background-color: lightgrey;
+        margin : 0px;
+      }
+      h2{
+        font-family: "Lucida Console", Courier, monospace;
+        letter-spacing: 2px;
+        font-size: 30px;
+      }
+
+      .btn {
+      background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+
+    </style>
+
+  </head>
+  <body>
+    <center>
+      <div class="cont">
+        <h2>
+          CONTEXT-BASED KEYPHRASE<br />
+          EXTRACTION USING SENTENCE EMBEDDINGS
+        </h2>
+        <br>
+      </div>
+
+      <form
+        method="POST"
+        action="{{url_for('home')}}"
+        enctype="multipart/form-data"
+      >
+        <input type="file" name="text" class="btn" /><br /><br /><br />
+        <input type="submit" class="btn" />
+      </form>
+    </center>
+  </body>
+</html>

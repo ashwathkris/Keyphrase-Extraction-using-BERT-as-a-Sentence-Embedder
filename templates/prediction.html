@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8" />
+
+    <style >
+      .btn {
+      background-color: #4CAF50;
+  border: none;
+  color: white;
+  font-family: "Lucida Console", Courier, monospace;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+h1{
+        font-family: "Lucida Console", Courier, monospace;
+        letter-spacing: 1px;
+      }
+      h3{
+        font-family: "Lucida Console", Courier, monospace;
+        letter-spacing: 1px;
+      }
+      table {
+  border-spacing: 5px;
+  border: 2px solid black;
+}
+
+    </style>
+
+  </head>
+  <body>
+    <br>
+    <center> 
+      <h1 class = "head">EXTRACTED KEYWORDS</h1>
+      <br>
+
+
+      <table>
+        <tr>
+          <td>
+            {% for i in data%}
+      <h3>{{i}}</h3>
+      {% endfor %}
+          </td>
+        </tr>
+      </table>
+      <br>
+      <a href="/" class="btn">Back</a>
+    </center>
+  </body>
+</html>
